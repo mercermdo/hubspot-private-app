@@ -1,0 +1,26 @@
+# HubSpot Private App Practicum
+
+This project was created for the **Integrating with HubSpot I: Foundations** certification using Node.js, Express, Axios, and Pug. It demonstrates how to build a CRM integration with HubSpot's API using a **private app token**.
+
+## 💡 Features
+
+- Connects to HubSpot using a private app token stored in `.env`
+- Lists all companies in your CRM
+- Allows users to add new companies via a web form
+- Uses Pug to render dynamic HTML views
+- Styled with custom floating bubble animation (🎉 bonus flair!)
+
+## 🛠️ Technologies
+
+- Node.js
+- Express
+- Axios
+- Pug
+- dotenv
+
+## 🔐 Setup Instructions
+
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/mercermdo/hubspot-private-app.git
+   cd private-app

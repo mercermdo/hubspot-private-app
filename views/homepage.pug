@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet" href="/css/style.css")
+  body
+    // 👇 Bubble container
+    .bubbles
+      - for (let i = 0; i < 10; i++)
+        div(class="bubble" style=`left:${i * 10}vw; animation-delay:${i}s;`)
+
+    h1= title
+    a(href="/new-company") Add a New Company
+    if companies.length
+      table(border="1")
+        thead
+          tr
+            th ID
+            th Name
+            th Domain
+        tbody
+          each company in companies
+            tr
+              td= company.id
+              td= company.properties.name
+              td= company.properties.domain
+    else
+      p No companies found.

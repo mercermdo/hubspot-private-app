@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1= title
+    form(action="/create-company" method="POST")
+      label(for="name") Company Name:
+      input(type="text" name="name" required)
+      br
+      label(for="domain") Website Domain:
+      input(type="text" name="domain" required)
+      br
+      button(type="submit") Create Company
+    br
+    a(href="/") ← Back to Home
